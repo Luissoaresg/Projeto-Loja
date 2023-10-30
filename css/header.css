@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+
+.facebook:hover,
+.instagram:hover,
+.github:hover,
+.linkedin:hover {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.top-header {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    padding: 0 130px;
+}
+
+.social {
+    display: flex;
+}
+
+.about-me {
+    display: flex;
+    font-size: 1em;
+}
+
+.about-me li {
+    margin: 0 1px;
+}
+
+.about-me a {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#whatsapp:hover {
+    color: #56d166;
+}
+
+#user:hover {
+    color: #8400ac;
+}
+
+.fa-user,
+.fa-whatsapp {
+    margin: 0 5px 0 0;
+}
+
+header {
+    display: flex;
+    padding: 15px 130px;
+    background-color: #000;
+    gap: 15em;
+}
+
+.menu {
+    font-size: 2em;
+}
+
+.logo img {
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    width: 15vw;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.input i {
+    cursor: pointer;
+    position: absolute;
+    left: 1100px;
+}
