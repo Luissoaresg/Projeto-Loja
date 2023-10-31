@@ -65,8 +65,15 @@ a {
 
 header {
     display: flex;
-    padding: 15px 130px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     background-color: #000;
+}
+
+.header {
+    display: flex;
+    padding: 15px 130px 10px;
     gap: 8em;
     align-items: center;
     align-content: center;
@@ -81,6 +88,7 @@ header {
 }
 
 .input {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,12 +106,18 @@ header {
 .input i {
     cursor: pointer;
     position: absolute;
-    left: 1170px;
+    right: 15px;
 }
 
 .login {
     display: flex;
     color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #ffff00;
 }
 
 .login i{
@@ -115,11 +129,40 @@ header {
 }
 
 .shop {
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.7em;
+    padding: 6px 15px;
+    border-radius: 50px;
+    background-color: #FFF;
+    gap: 1.2em;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.shop:hover {
+    background-color: #ffff00;
 }
 
 .rastreio span {
     font-size: 20px;
+}
+
+.nav-header {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    padding: 0 300px ;
+    justify-content: space-around;
+}
+
+.nav-header li a{
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-header li a:hover{
+    color: #ffff00;
 }

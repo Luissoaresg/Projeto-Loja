@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#container {
+    margin: 50px 200px;
+}
+
+.border {
+    margin-top: 20px;
+    width: 30%;
+    border: solid 1px #333;
+    height: 0;
+}
+
+.marcas {
+    font-size: 30px;
+}
+
+.nav-marcas, #card {
+    display: flex;
+    padding: 20px 50px;
+    gap: 51px;
+}
+
+.card-marca img{
+    width: 6vw;
+}
+
+.card-marca {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.carousel-card {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.btn-carrossel-card{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+#prev-card {
+    left: 0;
+}
+
+#next-card {
+    right: 0;
+}
