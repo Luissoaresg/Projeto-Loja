@@ -65,9 +65,11 @@ a {
 
 header {
     display: flex;
-    padding: 15px 130px;
+    padding: 15px 130px 10px;
     background-color: #000;
-    gap: 15em;
+    gap: 8em;
+    align-items: center;
+    align-content: center;
 }
 
 .menu {
@@ -75,9 +77,6 @@ header {
 }
 
 .logo img {
-    position: absolute;
-    top: -50px;
-    left: 200px;
     width: 15vw;
 }
 
@@ -99,5 +98,28 @@ header {
 .input i {
     cursor: pointer;
     position: absolute;
-    left: 1100px;
+    left: 1170px;
+}
+
+.login {
+    display: flex;
+    color: #fff;
+}
+
+.login i{
+    font-size: 1.5em;
+}
+
+.login span {
+    font-size: 20px;
+}
+
+.shop {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+.rastreio span {
+    font-size: 20px;
 }
