@@ -10,20 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     intervalId = currentIndex = (currentIndex + 1) % carousel.children.length;
   }
 
-  function stopCarousel() {
-    clearInterval(intervalId);
-  }
-
   prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
     updateCarousel();
-    stopCarousel();
   });
 
   nextButton.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % carousel.children.length;
     updateCarousel();
-    stopCarousel();
   });
 
   function updateCarousel() {
