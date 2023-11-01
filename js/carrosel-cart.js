@@ -7,21 +7,33 @@ document.addEventListener("DOMContentLoaded", function () {
   let intervalId;
 
   function startCarousel() {
-    intervalId = currentIndex = (currentIndex + 1) % carousel.children.length;
+    intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % carousel.children.length;
+      updateCarousel();
+    }, 5000); // Mude de imagem a cada 5 segundos (ajuste o valor conforme necessário)
+  }
+
+  function stopCarousel() {
+    clearInterval(intervalId);
   }
 
   prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+    currentIndex =
+      (currentIndex - 1 + carousel.children.length) % carousel.children.length;
     updateCarousel();
+    stopCarousel();
+    startCarousel();
   });
 
   nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % carousel.children.length;
+    currentIndex = (currentIndex + 5) % carousel.children.length;
     updateCarousel();
+    stopCarousel();
+    startCarousel();
   });
 
   function updateCarousel() {
-    const translateValue = -currentIndex * 30;
+    const translateValue = -currentIndex * 13;
     carousel.style.transform = `translateX(${translateValue}%)`;
   }
 

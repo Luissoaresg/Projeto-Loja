@@ -1,9 +1,11 @@
-.container {
+.container-marcas,
+.container-lancamentos,
+.container-mais-vendidos {
     display: flex;
     justify-content: space-around;
 }
 
-#container {
+.container {
     margin: 50px 200px;
 }
 
@@ -14,17 +16,20 @@
     height: 0;
 }
 
-.marcas {
+.marcas,
+.lancamentos,
+.mais-vendidos {
     font-size: 30px;
 }
 
-.nav-marcas, #card {
+.nav-marcas,
+#card {
     display: flex;
     padding: 20px 50px;
     gap: 51px;
 }
 
-.card-marca img{
+.card-marca img {
     width: 6vw;
 }
 
@@ -43,7 +48,7 @@
     transition: transform 0.5s ease;
 }
 
-.btn-carrossel-card{
+.btn-carrossel-card {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -62,4 +67,60 @@
 
 #next-card {
     right: 0;
+}
+
+.prod {
+    margin: 0 70px;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+}
+
+.cart-lancamentos, .cart {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.img-prod img {
+    width: 13vw;
+}
+
+.descri-prod {
+    margin-top: 10px;
+    font-size: 18   px;
+    font-weight: bold;
+}
+
+.preco-back {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #ff0000;
+}
+
+.preco-next {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #008000;
+    font-weight: bold;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #00c000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .5s all;
+    border: none;
+}
+
+.btn-comprar:hover {
+    background-color: #008000;
+    transition: .5s all;
+    transform: translateY(-5px);
 }
