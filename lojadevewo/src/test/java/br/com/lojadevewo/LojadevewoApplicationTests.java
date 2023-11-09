@@ -1,10 +1,10 @@
-package br.com.devewo;
+package br.com.lojadevewo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevewoApplicationTests {
+class LojadevewoApplicationTests {
 
 	@Test
 	void contextLoads() {
